@@ -5,6 +5,10 @@ const ContactPage = () => {
     return (
         <StyledContactPage>
             <Heading className="animate__animated animate__fadeInLeft">Contact Page</Heading>
+            <Content>
+            <h1>👋 Hey there </h1>
+            <h3>Hope you liked the guide. <br/>Let me know how it went on <br/><a rel="noreferer noopener" target="_blank" href="https://www.twitter.com/hyggedev">Twitter!</a></h3>
+            </Content>
         </StyledContactPage>
     )
 }
@@ -32,6 +36,16 @@ const Heading = styled.h1`
    -khtml-user-select: none; /* Konqueror HTML */
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
+`;
+
+const Content = styled.div`
+    color: #eee;
+    font-size: clamp(1.5rem, 2vw, 4vw);
+
+    a {
+        color: skyblue;
+        text-decoration: none;
+    }
 `;
 
 export default ContactPage
