@@ -24,7 +24,7 @@ const StyledMenu = styled.div`
     @media screen and (min-width: 790px) {
         width: 60%;
     }
-    background-color: rgba(255,255,255,.95);
+    background-color: rgb(58, 66, 81, .9);
     z-index: 99;
 
     display: flex;
@@ -34,7 +34,7 @@ const StyledMenu = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-    color: #222;
+    color: #eee;
     text-decoration: none;
     font-size: clamp(3rem, 4vw, 6vw);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
