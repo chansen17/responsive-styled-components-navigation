@@ -7,6 +7,7 @@ const ContactPage = () => {
             <Heading className="animate__animated animate__fadeInLeft">Contact Page</Heading>
             <Content>
             <h1>👋 Hey there </h1>
+            <p>Like the demo? Let me know on <a href="https://www.twitter.com/hyggedev">Twitter! </a></p>
             </Content>
         </StyledContactPage>
     )
