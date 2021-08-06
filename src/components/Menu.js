@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
 import { FaTimes } from 'react-icons/fa';
 
 const Menu = ({handleNavToggle}) => {
@@ -10,7 +9,7 @@ const Menu = ({handleNavToggle}) => {
             <StyledLink className="animate__animated animate__fadeInRight" onClick={handleNavToggle} to="/">Home</StyledLink>
             <StyledLink className="animate__animated animate__fadeInRight" onClick={handleNavToggle} to="/example">Example Page</StyledLink>
             <StyledLink className="animate__animated animate__fadeInRight" onClick={handleNavToggle} to="/contact">Contact Page</StyledLink>
-            <CloseToggle className="animate__animated animate__fadeInRight" onClick={handleNavToggle} />
+            <CloseToggle className="animate__animated animate__fadeInRight" onClick={handleNavToggle}><FaTimes/></CloseToggle>
         </StyledMenu>
     )
 }
@@ -52,7 +51,7 @@ const StyledLink = styled(Link)`
     }
 `;
 
-const CloseToggle = styled(FaTimes)`
+const CloseToggle = styled.button`
     position: fixed;
     top: 5%;
     right: 4%;

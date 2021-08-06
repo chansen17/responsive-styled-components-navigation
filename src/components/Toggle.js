@@ -11,7 +11,7 @@ const Toggle = ({handleNavToggle}) => {
     )
 }
 
-const StyledToggle = styled(FaBars)`
+const StyledToggle = styled.button`
     position: fixed;
     top: 5%;
     right: 4%;
